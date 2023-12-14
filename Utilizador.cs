@@ -8,12 +8,20 @@ namespace EX_17
 {
     internal class Utilizador
     {
-        private static string nome;
-        private static string Email;
-        private static string Password;
+        public static string Nome;
+        public static string Email;
+        public static string Password;
 
-        List<Utilizador> Utilizadors = new List<Utilizador>();
+        List<Utilizador> Utilizadors = new List<Utilizador>();  
+        
+        public static List<Utilizador> listautilizadores = new List<Utilizador>();
 
+
+
+
+
+
+          
        
 
     }

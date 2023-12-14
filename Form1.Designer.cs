@@ -28,40 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtNome = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
             button2 = new Button();
             checkBox1 = new CheckBox();
+            label4 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // txtNome
             // 
-            textBox1.Location = new Point(141, 83);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtNome.Location = new Point(141, 83);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(100, 23);
+            txtNome.TabIndex = 0;
+            txtNome.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtEmail
             // 
-            textBox2.Location = new Point(141, 144);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txtEmail.Location = new Point(141, 144);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(100, 23);
+            txtEmail.TabIndex = 1;
+            txtEmail.TextChanged += textBox2_TextChanged;
             // 
-            // textBox3
+            // txtPassword
             // 
-            textBox3.Location = new Point(141, 207);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
-            textBox3.TextChanged += textBox3_TextChanged;
+            txtPassword.Location = new Point(141, 207);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(100, 23);
+            txtPassword.TabIndex = 2;
+            txtPassword.TextChanged += textBox3_TextChanged;
             // 
             // label1
             // 
@@ -121,20 +122,31 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(535, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 9;
+            label4.Text = "label4";
+            label4.Click += label4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
             Controls.Add(checkBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtEmail);
+            Controls.Add(txtNome);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -143,14 +155,15 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtNome;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
         private Label label1;
         private Label label2;
         private Label label3;
         private Button button1;
         private Button button2;
         private CheckBox checkBox1;
+        private Label label4;
     }
 }

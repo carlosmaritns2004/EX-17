@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             button2 = new Button();
+            ListaUtilizadores = new ListBox();
             SuspendLayout();
             // 
             // button1
@@ -44,7 +45,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(184, 214);
+            button2.Location = new Point(527, 208);
             button2.Name = "button2";
             button2.Size = new Size(155, 52);
             button2.TabIndex = 1;
@@ -52,11 +53,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // ListaUtilizadores
+            // 
+            ListaUtilizadores.FormattingEnabled = true;
+            ListaUtilizadores.ItemHeight = 15;
+            ListaUtilizadores.Location = new Point(66, 197);
+            ListaUtilizadores.Name = "ListaUtilizadores";
+            ListaUtilizadores.Size = new Size(120, 94);
+            ListaUtilizadores.TabIndex = 2;
+            ListaUtilizadores.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ListaUtilizadores);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form2";
@@ -68,5 +80,6 @@
 
         private Button button1;
         private Button button2;
+        private ListBox ListaUtilizadores;
     }
 }

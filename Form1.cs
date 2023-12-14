@@ -1,3 +1,5 @@
+using System.Reflection.Emit;
+
 namespace EX_17
 {
     public partial class Form1 : Form
@@ -7,7 +9,8 @@ namespace EX_17
             InitializeComponent();
             this.BackColor = Color.Red;
             this.ForeColor = Color.Blue;
-            this.Text = "OK";
+            this.Text = "Página Principal";
+            label4.Text = Utilizador.Nome;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -27,6 +30,18 @@ namespace EX_17
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string nome = txtNome.Text;
+            string Email = txtEmail.Text;   
+            string password = txtPassword.Text;
+
+            Utilizador.Nome = nome;
+            Utilizador.Email = Email;
+            Utilizador.Password= password;  
+
+            Utilizador.Nome="Utilizador:"+txtNome.Text;
+            label4.Text= Utilizador.Nome;   
+
+            MessageBox.Show("Nome:",Utilizador.Nome);   
 
         }
 
@@ -41,13 +56,18 @@ namespace EX_17
         {
             if (checkBox1.Checked)
             {
-                textBox3.UseSystemPasswordChar = false;
+                txtPassword.UseSystemPasswordChar = false;
             }
             else
             {
-                textBox3.UseSystemPasswordChar = true;
+                txtPassword.UseSystemPasswordChar = true;
 
             }
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }

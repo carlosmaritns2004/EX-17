@@ -29,7 +29,18 @@ namespace EX_17
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListaUtilizadores.Items.Add("nome:" + Utilizador.Nome);
+            ListaUtilizadores.Items.Add("Email:" + Utilizador.Nome);
+            ListaUtilizadores.Items.Add("Password:" + Utilizador.Nome);
+
+          
+
 
         }
     }
