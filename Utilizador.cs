@@ -12,5 +12,9 @@ namespace EX_17
         private static string Email;
         private static string Password;
 
+        List<Utilizador> Utilizadors = new List<Utilizador>();
+
+       
+
     }
 }
